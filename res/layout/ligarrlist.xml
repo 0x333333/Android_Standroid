@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dip"
+            android:text="@string/stop"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </RelativeLayout>
+    
+    <TextView 
+	    android:id="@+id/line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@+id/RL1"
+	    android:background="#a1006b"/>
+    
+    <RelativeLayout 
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        android:padding="5dip"
+        >
+            
+        <RelativeLayout
+            android:id="@+id/RL4"
+            android:layout_width="match_parent"
+            android:layout_height="45dip" 
+            >
+                
+            <EditText
+              android:id="@+id/et_station"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="2dip"
+              android:layout_centerVertical="true"
+              android:hint="@string/choisir_arret"
+              android:textColor="#000000"
+             />
+         
+            
+        </RelativeLayout>
+        
+        <TextView 
+			android:id="@+id/line2"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_below="@+id/RL4"
+			android:background="#a1006b"
+			/>
+        
+    </RelativeLayout>
+        
+    <ListView
+        android:id="@+id/arr_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/RL2"
+        android:scrollbars="horizontal" >
+
+	</ListView>
+    
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a15062be729d9f9"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
+    </com.google.ads.AdView>
+
+</RelativeLayout>

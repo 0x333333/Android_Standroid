@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dip"
+            android:text="AIDE"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:id="@+id/sv"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/RL1"
+        android:background="@drawable/bg"
+        android:padding="0dip"
+        >
+        <RelativeLayout 
+            android:layout_height="match_parent"
+        	android:layout_width="match_parent"
+            >
+            
+            <TextView
+                android:id="@+id/about"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="12dip"
+				android:textSize="16dip"
+				android:textColor="#222222"
+                />
+            
+            <TextView
+				android:id="@+id/aide"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/about"
+				android:padding="8dip"
+				android:text="@string/guide"
+				android:textSize="18dip"
+				android:textColor="#ffffff"
+				android:background="@drawable/gradient"
+			/>
+            
+            <TextView
+                android:id="@+id/brief"
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/aide"
+				android:padding="8dip"
+				android:textSize="16dip"
+				android:textColor="#222222"
+                />
+            
+            <TextView
+                android:id="@+id/title_function"
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/brief"
+				android:padding="8dip"
+				android:textSize="17dip"
+				android:textColor="#222222"
+                />
+            
+            <TextView
+                android:id="@+id/function"
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/title_function"
+				android:padding="12dip"
+				android:textSize="16dip"
+				android:textColor="#222222"
+                />
+            
+            <TextView
+                android:id="@+id/title_legal"
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/function"
+				android:padding="8dip"
+				android:textSize="17dip"
+				android:textColor="#222222"
+                />
+            
+            <TextView
+                android:id="@+id/info_legal"
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/title_legal"
+				android:padding="8dip"
+				android:textSize="16dip"
+				android:textColor="#222222"
+                />
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

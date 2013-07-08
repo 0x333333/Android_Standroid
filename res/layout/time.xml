@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dip"
+            android:text="@string/next"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            />
+        
+        <Button 
+            android:id="@+id/refresh"
+            android:layout_width="35dip"
+			android:layout_height="35dip"
+			android:layout_centerVertical="true"
+			android:layout_margin="5dip"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/refresh_selector"
+            />
+        
+    </RelativeLayout>
+    
+    <TextView 
+	    android:id="@+id/line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@+id/RL1"
+	    android:background="#a1006b"/>
+    
+    <RelativeLayout 
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        android:padding="5dip"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/RL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <RelativeLayout
+                android:id="@+id/RL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+                
+                <RelativeLayout 
+                    android:id="@+id/rl_first"
+                    android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+                    >
+                    
+                    <TextView
+	                    android:id="@+id/arrname"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_margin="2dip"
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_toLeftOf="@+id/refresh"
+	                    android:text="Arrêt"
+	                    android:textSize="18dip"
+	                    android:textColor="#4E4848"
+	                    />
+	                
+	                <Button 
+			            android:id="@+id/send_msg"
+			            android:layout_width="45dip"
+						android:layout_height="45dip"
+						android:layout_centerVertical="true"
+						android:layout_margin="5dip"
+						android:layout_alignParentRight="true"
+						android:background="@drawable/msg_selector"
+			            />
+	                
+                </RelativeLayout>
+                
+            </RelativeLayout>
+            
+            <TextView 
+		    android:id="@+id/line2"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@+id/RL4"
+		    android:background="#a1006b"
+		    />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_above="@+id/adView"
+	    android:layout_below="@+id/RL2"
+	    android:background="@drawable/bg"
+	    android:padding="5dip"
+        >
+	    <TextView
+	        android:id="@+id/tv_time"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textSize="16dip"
+	        android:textColor="#000000"
+	        />
+	</ScrollView>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a15062be729d9f9"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
+    </com.google.ads.AdView>
+
+</RelativeLayout>

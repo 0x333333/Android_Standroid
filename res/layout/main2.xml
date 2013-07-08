@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dip"
+            android:text="@string/title_app_name"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </RelativeLayout>
+    
+    <TextView 
+	    android:id="@+id/line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@+id/RL1"
+	    android:background="#a1006b"/>
+    
+    <RelativeLayout 
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout 
+            android:id="@+id/ll"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			>
+			<Button 
+	            android:id="@+id/search_arret"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:background="@drawable/stop_selector"
+	            android:layout_weight="1.0"
+	            />
+			<Button 
+	            android:id="@+id/search_ligne"
+	            android:layout_height="wrap_content"
+	            android:layout_width="fill_parent"
+	            android:background="@drawable/map_selector"
+	            android:layout_weight="1.0"
+	            />
+		</LinearLayout>
+		
+        <TextView
+			android:id="@+id/my_arret"
+			android:layout_span="3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/ll"
+			android:padding="8dip"
+			android:text="@string/my_stop"
+			android:textSize="16dip"
+			android:textColor="#ffffff"
+			android:background="@drawable/gradient"
+		/>
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/RL2"
+        android:scrollbars="horizontal" 
+        >
+	</ListView>
+
+</RelativeLayout>

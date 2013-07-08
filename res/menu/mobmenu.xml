@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <item 
+    android:id="@+id/aide"
+    android:icon="@drawable/aide32"
+    android:title="@string/aide"  
+    />
+  <item 
+    android:id="@+id/quitter"
+    android:title="@string/quitter"
+    android:icon="@drawable/quitter32"
+    />
+</menu>

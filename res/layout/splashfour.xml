@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:id="@+id/splash"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent" 
+  android:orientation="vertical">
+  <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/last_show"
+        android:textColor="#b30071"
+        android:textSize="22dip"
+        android:textStyle="italic|bold"
+        android:background="#00000000"
+        />
+    
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/next_show" 
+        android:textColor="#b30071"
+        android:textSize="22dip"
+        android:textStyle="italic|bold" 
+        android:background="#00000000"
+        />
+</RelativeLayout>  

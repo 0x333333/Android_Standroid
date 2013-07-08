@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="version_code">7</string>
+    <string name="app_name">StanDroid</string>
+    <string name="title_app_name">STANDROID</string>
+    <string name="stop">ARRÊTS</string>
+    <string name="ligne">LIGNES</string>
+    <string name="my_stop">MES ARRÊTS</string>
+    <string name="direction">DIRECTIONS</string>
+    <string name="next">PROCHAINS PASSAGES</string>
+    <string name="tard">Excusez-moi, il n\'y a aucun résultat pour cette requête.</string>
+    <string name="connect">Recherche en cours</string>
+    <string name="wait">S\'il vous plaît être patient</string>
+    <string name="add_title">Ajouter un arrêt</string>
+    <string name="add_msg">Etes-vous sûr de vouloir ajouter?</string>
+    <string name="del_title">Supprimer un arrêt</string>
+    <string name="del_msg">Etes-vous sûr de vouloir supprimer?</string>
+    <string name="choisir_ligne">CHOISIR UNE LIGNE</string>
+    <string name="choisir_arret">CHOISIR UN ARRÊT</string>
+    <string name="accueil">Accueil</string>
+    <string name="update">Mettre à jour</string>
+    <string name="aide">Aide</string>
+    <string name="quitter">Quitter</string>
+    <string name="telecharger">Etes-vous sûr de vouloir télécharger?</string>
+    <string name="oui">OUI</string>
+    <string name="non">NON</string>
+    <string name="guide">GUIDE</string>
+    <string name="guide_">Guide</string>
+    <string name="score">Score</string>
+    <string name="payer">Supprimer pubs</string>
+    <string name="next_show">Suivant &gt;</string>
+    <string name="last_show">&lt; Précédent</string>
+    <string name="send">Envoyer un message</string>
+    <string name="latest">Vous utilisez actuellement la dernière version.</string>
+
+</resources>
