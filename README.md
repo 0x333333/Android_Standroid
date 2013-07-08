@@ -1,0 +1,1 @@
+Another version with adMob.
